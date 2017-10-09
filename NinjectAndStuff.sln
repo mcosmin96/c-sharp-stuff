@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjectAndStuff", "NinjectAndStuff\NinjectAndStuff.csproj", "{628BF59D-4EAC-4E70-9B5A-710B26A9F67A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTesting", "NUnitTesting\NUnitTesting.csproj", "{BA2E20DD-21C3-4F76-90C2-4B3C308FE681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpServerStuff", "TcpStuff\TcpServerStuff.csproj", "{60D38912-66E1-4CAF-BAFA-864891C78604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientStuff", "TcpClientStuff\TcpClientStuff.csproj", "{D4F5BEAB-3AC5-4AAF-B27A-8F54FD181A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpServerTalker", "UdpServerStuff\UdpServerTalker.csproj", "{0A199273-A3DA-4155-ADC9-28ED8DA02C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpServerListener", "UdpServerListener\UdpServerListener.csproj", "{5C56E7FC-B5E1-4E85-AC4D-517473F425B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchronous Programming", "Asynchronous Programming\Asynchronous Programming.csproj", "{3C4A8044-35E0-4E3E-A23F-B705E37E2998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{628BF59D-4EAC-4E70-9B5A-710B26A9F67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628BF59D-4EAC-4E70-9B5A-710B26A9F67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628BF59D-4EAC-4E70-9B5A-710B26A9F67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628BF59D-4EAC-4E70-9B5A-710B26A9F67A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2E20DD-21C3-4F76-90C2-4B3C308FE681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2E20DD-21C3-4F76-90C2-4B3C308FE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2E20DD-21C3-4F76-90C2-4B3C308FE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2E20DD-21C3-4F76-90C2-4B3C308FE681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D38912-66E1-4CAF-BAFA-864891C78604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D38912-66E1-4CAF-BAFA-864891C78604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D38912-66E1-4CAF-BAFA-864891C78604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D38912-66E1-4CAF-BAFA-864891C78604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F5BEAB-3AC5-4AAF-B27A-8F54FD181A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F5BEAB-3AC5-4AAF-B27A-8F54FD181A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F5BEAB-3AC5-4AAF-B27A-8F54FD181A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F5BEAB-3AC5-4AAF-B27A-8F54FD181A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A199273-A3DA-4155-ADC9-28ED8DA02C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A199273-A3DA-4155-ADC9-28ED8DA02C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A199273-A3DA-4155-ADC9-28ED8DA02C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A199273-A3DA-4155-ADC9-28ED8DA02C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C56E7FC-B5E1-4E85-AC4D-517473F425B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C56E7FC-B5E1-4E85-AC4D-517473F425B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C56E7FC-B5E1-4E85-AC4D-517473F425B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C56E7FC-B5E1-4E85-AC4D-517473F425B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4A8044-35E0-4E3E-A23F-B705E37E2998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4A8044-35E0-4E3E-A23F-B705E37E2998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4A8044-35E0-4E3E-A23F-B705E37E2998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4A8044-35E0-4E3E-A23F-B705E37E2998}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4CB487A-91B8-401F-9778-54D970C58FBA}
+	EndGlobalSection
+EndGlobal
