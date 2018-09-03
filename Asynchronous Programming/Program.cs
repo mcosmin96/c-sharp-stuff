@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Asynchronous_Programming
@@ -7,11 +9,7 @@ namespace Asynchronous_Programming
     {
         static void Main(string[] args)
         {
-            int number = 1;
-            while (number != 0)
-            {
-                Console.WriteLine("Enter number: ");
-                number = Int32.Parse(Console.ReadLine());
+            Go();
                 //ulong result = 0;
 
                 // Task S = new Task(() =>
@@ -26,11 +24,11 @@ namespace Asynchronous_Programming
 
                 // S.Start();
 
-                Task<ulong> S = Task.Factory.StartNew(() =>
-                {
-                    ulong result = Simulate(number);
-                    return result;
-                });
+                //Task<ulong> S = Task.Factory.StartNew(() =>
+                //{
+                //    ulong result = Simulate(number);
+                //    return result;
+                //});
 
                 //Console.ReadLine(); // Sc wouldnt work until you enter something
 
@@ -44,10 +42,30 @@ namespace Asynchronous_Programming
                 //Task.WaitAll(taskArray); // wait on all tasks to finish
                 //int index = Task.WaitAny(taskArray); // wait for the first to finish, taskArray[index] is the task that finished
 
-                Console.WriteLine($"{number} * {number} = {S.Result}");
+                //await
+                
                 //when you call S.Result the call only returns when the Task is done computing, obviously
+        }
 
-
+        private async static void Go()
+        {
+            int number = 1;
+            while (number != 0)
+            {
+                Console.WriteLine("Enter number: ");
+                number = Int32.Parse(Console.ReadLine());
+                Stopwatch watch = new Stopwatch();
+                watch.Start();
+                async Task<ulong> S()
+                {
+                    ulong result = Simulate(number);
+                    return result;
+                    //throw new Exception();
+                }
+                Console.WriteLine("Started simulating");
+                ulong sresult = await S();
+                watch.Stop();
+                Console.WriteLine($"{number} * {number} = {sresult} :: {watch.Elapsed}");
             }
         }
 
